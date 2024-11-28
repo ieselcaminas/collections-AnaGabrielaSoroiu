@@ -21,6 +21,5 @@ public class Coches {
         for (int i = 0; i < coches.size() ; i++) {
             System.out.println(coches.get(i));
         }
-
     }
 }
