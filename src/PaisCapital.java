@@ -18,7 +18,6 @@ public class PaisCapital {
         Scanner sc = new Scanner(System.in);
 
         String pais = sc.nextLine();
-
         String minuscula;
 
         minuscula = pais.toLowerCase();
@@ -28,7 +27,6 @@ public class PaisCapital {
         } else {
             System.out.println("La capital es: " + mapa1.get(minuscula));
         }
-
         return pais;
     }
 }
