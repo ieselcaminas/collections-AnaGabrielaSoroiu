@@ -5,20 +5,20 @@ import java.util.Scanner;
 
 public class TelefonosII {
     public static void main(String[] args) {
-        Map<String, ArrayList<Integer>> contactos = new HashMap<>();
-        ArrayList<Integer> telefonos = new ArrayList<>();
-        telefonos.add(5555);
-        telefonos.add(6666);
+        Map<String, ArrayList<String>> contactos = new HashMap<>();
+        ArrayList<String> telefonos = new ArrayList<>();
+        telefonos.add("5555");
+        telefonos.add("6666");
         contactos.put("pepe", telefonos);
 
         telefonos = new ArrayList<>();
-        telefonos.add(7777);
+        telefonos.add("7777");
         contactos.put("ramona", telefonos);
 
         telefonos = new ArrayList<>();
-        telefonos.add(8888);
-        telefonos.add(9999);
-        telefonos.add(0000);
+        telefonos.add("8888");
+        telefonos.add("9999");
+        telefonos.add("0000");
 
         contactos.put("paquita", telefonos);
 
@@ -26,7 +26,7 @@ public class TelefonosII {
         String telefono = telefonos(contactos);
     }
 
-    public static String telefonos (Map<String, ArrayList<Integer>> contactos) {
+    public static String telefonos (Map<String, ArrayList<String>> contactos) {
         Scanner sc = new Scanner(System.in);
 
         String contacto = sc.nextLine();
