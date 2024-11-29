@@ -2,8 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Frequency {
-    public static Map<String, Integer> frecuencia (String[] palabras) {
-        Map<String, Integer> frecuencia = new HashMap<String, Integer>();
+    public static Map<String, Integer> frequency (String[] palabras) {
+        Map<String, Integer> frecuencia = new HashMap<>();
 
         for (String palabra : palabras) {
             if (!frecuencia.containsKey(palabra)) {
@@ -15,6 +15,6 @@ public class Frequency {
     }
 
     public static void main(String[] args) {
-        System.out.println(frecuencia(new String[] {"uno", "dos", "dos", "tres", "tres", "tres", "uno"}));
+        System.out.println(frequency(new String[] {"uno", "dos", "dos", "tres", "tres", "tres", "uno"}));
     }
 }
