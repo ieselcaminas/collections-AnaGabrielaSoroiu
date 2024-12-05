@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Anagramas {
+public class Anagrams {
     public static void main(String[] args) throws IOException {
         Map<String, ArrayList<String>> map = anagrams();
     }
