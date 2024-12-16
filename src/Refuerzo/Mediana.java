@@ -2,17 +2,26 @@ package Refuerzo;
 
 public class Mediana {
     public static void main(String[] args) {
-        int[] numeros = {1, 2, 6, 17, 18, 22, 35, 46, 109, 143, 200};
+        double[] numeros = {1, 2, 6, 17, 18};
 
+        System.out.println(mediana(numeros));
     }
 
-    public static double mediana(int[] numeros) {
-        double mediana = 0;
+    public static double mediana (double[] numeros) {
+        double mediana;
+        int contador = 0;
 
-        for (int i = 0; i < numeros.length; i++) {
-            if (numeros[i] % 2 == 0) {
-
+        if (numeros.length % 2 == 0) {
+            for (int i = 0; i < numeros.length; i++) {
+                contador++;
             }
-        }
+            mediana = (numeros[contador/ 2] + numeros[(contador - 1) / 2]) / 2;
+
+        } else {
+            for (int i = 0; i < numeros.length; i++) {
+                contador++;
+            }
+            mediana = numeros[contador / 2];
+        } return mediana;
     }
 }
