@@ -2,7 +2,7 @@ package Refuerzo;
 
 import java.util.Arrays;
 
-public class faltaNumero {
+public class FaltaNumero {
     public static void main(String[] args) {
         int[] numeros = {5,7,8,9};
 
