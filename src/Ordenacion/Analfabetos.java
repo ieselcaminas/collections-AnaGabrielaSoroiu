@@ -32,7 +32,7 @@ public class Analfabetos implements Comparable<Analfabetos>{
 
     @Override
     public int compareTo(Analfabetos other) {
-        return other.getAnalfabeto() - this.getAnalfabeto();
+        return this.getAnalfabeto() - other.getAnalfabeto();
     }
 
 
