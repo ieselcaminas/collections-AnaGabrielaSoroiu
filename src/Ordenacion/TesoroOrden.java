@@ -3,7 +3,7 @@ package Ordenacion;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrdenTesoro {
+public class TesoroOrden {
     public static void main(String[] args) {
         List<Tesoro> tesoros = new ArrayList<>();
 
